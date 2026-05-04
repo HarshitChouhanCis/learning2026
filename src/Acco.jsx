@@ -45,14 +45,4 @@ function Acco() {
 
 export default Acco
 
-// 123
 
-//160
-
-//200
-
-//206
-
-//ek bacha hai(Rotate)
-// Rotate right by k
-// non premitive and it calculation
