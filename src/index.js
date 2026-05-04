@@ -11,12 +11,18 @@ import Accodians from './Accodians';
 import Osama from './Osama';
 import PasswordValidator from './Pass';
 import Ask from './Ask';
+import ListProgress from './ListProgress';
+import Acco from './Acco';
+import Tables from './Tables';
+import A from './A';
+import Fri from './Fri';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-<Ask/>
+<Fri/>
 </>
+
  
 );
 
