@@ -941,7 +941,8 @@
 // console.log('longestUnique: ', longestUnique(str));
 
 
-let obj = {"o":12,"k":23,"j":34,"l":45,"p":56}
-let o = JSON.stringify(obj)
-console.log(JSON.stringify(obj));
-console.log(JSON.parse(o));
+// let obj = {"o":12,"k":23,"j":34,"l":45,"p":56}
+// let o = JSON.stringify(obj)
+// console.log(JSON.stringify(obj));
+// console.log(JSON.parse(o));
+console.log();
