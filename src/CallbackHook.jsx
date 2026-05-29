@@ -22,6 +22,11 @@ export default function WithCallbackExample() {
   }, [count2]);
 
   console.log("Parent rendered");
+  const obj = {
+    "tets":23,
+    "ta":24
+
+  }
   return (
     <div>
       <h2>With useCallback:</h2>

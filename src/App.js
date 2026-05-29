@@ -36,7 +36,7 @@ function parentApp() {
 // }
 
 
- const [text, setText] = useState("Wrong Text");
+//  const [text, setText] = useState("Wrong Text");
 
 
   // useLayoutEffect(() => {

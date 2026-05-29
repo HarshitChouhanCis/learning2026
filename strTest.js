@@ -165,3 +165,37 @@
 //  return op;
 // }
 // console.log('count("aabbcde"): ', count("aabbcde"));
+
+
+// function count(str){
+//  let count = 1;
+//  let op = ""
+
+//   for(let i =1 ; i<str.length; i++){
+//     if(str[i] == str[i-1]){
+//       count ++
+//     }else{
+//       op += count + str[i-1]
+//       count = 1
+//     }
+//   }
+//   return op
+// }
+
+// console.log('count("aabbcde"): ', count("aabbcde"));
+
+
+// op:  [ 24, 12, 8, 6 ]
+// let arr = [1,2,3,4]
+// let n = arr.length;
+// let op = new Array(n).fill(1)
+// let l = 1;
+// let r = 1;
+// for(let i=0; i<n; i++){
+//   op[i] *= l;
+//   l = arr[i]*l;
+//   op[n-1-i] *= l;
+//   r =arr[n-1-i]*r;
+// }
+// console.log(op);
+
