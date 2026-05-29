@@ -94,6 +94,26 @@
 
 // ?? only check ,null,undefined
 
-console.log(0 || "A");
-console.log("" || "B");
-console.log(false || "C");
+// console.log(0 || "A");
+// console.log("" || "B");
+// console.log(false || "C");
+
+let arr = [1,2,3,4,5]
+function rotatedArray(arr ,n){
+let len = arr.length;
+let rot = n % len
+ function rotate(start,end){
+  while(start<end)
+    [start,end] = [end,start]
+    start++
+    end--
+ }
+ rotate(0,len-1)
+ rotate(0,n-1)
+ rotate(n,len-1)
+ return arr
+}
+
+// rotatedArray(arr,2)
+console.log('rotatedArray(arr,2): ', rotatedArray(arr,2));
+

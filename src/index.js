@@ -17,10 +17,15 @@ import Tables from './Tables';
 import A from './A';
 import Fri from './Fri';
 
+import Tests from './Tests';
+import Check from './Check';
+import WithCallbackExample from './CallbackHook';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-<Fri/>
+{/* <Fri/> */}
+<WithCallbackExample/>
 </>
 
  

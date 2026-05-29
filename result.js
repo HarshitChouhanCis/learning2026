@@ -1,38 +1,38 @@
 
 // 11. 3 Sum
 
-// 👉 Find all triplets whose sum = 0
+//=Find all triplets whose sum = 0
 
 // Input: [-1,0,1,2,-1,-4]
 // Output: [[-1,-1,1], [-1,0,1]]
 // 12. Trapping Rain Water
 
-// 👉 Calculate water stored between bars
+// Calculate water stored between bars
 
 // Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 // Output: 6
 // 13. Product of Array Except Self
 
-// 👉 No division allowed
+//No division allowed
 
 // Input: [1,2,3,4]
 // Output: [24,12,8,6]
 // 14. Find Missing Number
 
-// 👉 Numbers from 1 to n, one missing
+//Numbers from 1 to n, one missing
 
 // Input: [1,2,4,5]
 // Output: 3
 // 15. Merge Intervals
 
-// 👉 Merge overlapping intervals
+// Merge overlapping intervals
 
 // Input: [[1,3],[2,6],[8,10]]
 // Output: [[1,6],[8,10]]
-// 🔥 Pro Level (Very Important Patterns)
+// Pro Level (Very Important Patterns)
 // 16. Sliding Window Max Sum
 
-// 👉 Max sum of subarray of size k
+// Max sum of subarray of size k
 
 // 17. Longest Subarray with Sum K
 // 18. Subarray with Zero Sum Exists
@@ -219,10 +219,7 @@
 
 //op slidingwindow (13)
 // let arr = [2,3,4,2,1,4,0,6,0,3,4,0,2,5];
-// let windowSum = 0;
-// let limit = 4;
-// let maxSum = 0;
-// function test(arr,limit){
+// let windowSum = 0; 👉 
     
 //     for(let i=0; i<limit; i++){
 //         windowSum += arr[i]
@@ -474,14 +471,7 @@
 
 
 //three sum
-
-// let arr = [2, 7, 11, 15, 3, 6];
-// let target = 20;
-
-// function test(){
-// let obj = {}
-// for(let i=0; i<arr.length; i++){
-//     let temp = target - arr[i]
+ 👉 
 //    for(let j=0; j<arr.length; j++){
 //     let temp2 = temp - arr[j]
 //     if(obj[temp2]){
@@ -859,23 +849,48 @@
 // console.log('test([arr]): ', test(arr));
 
 
-let arr = [1,2,3,4]
-let n = arr.length;
-let op = new Array(n).fill(1) 
-function test(){
-let l = 1;
-let r = 1;
-for(let i=0 ; i<arr.length; i++){
-   op[i] = op[i]*l;
-    l =l* arr[i];
+// let arr = [1,2,3,4]
+// let n = arr.length;
+// let op = new Array(n).fill(1) 
+// function test(){
+// let l = 1;
+// let r = 1;
+// for(let i=0 ; i<arr.length; i++){
+//    op[i] = op[i]*l;
+//     l =l* arr[i];
     
-    op[n-1-i] *= r;
-     r= r* arr[n-1-i]
+//     op[n-1-i] *= r;
+//      r= r* arr[n-1-i]
   
-  } return op;
-}
+//   } return op;
+// }
 
-// test([arr])
-console.log('test([arr]): ', test());
+// // test([arr])
+// console.log('test([arr]): ', test());
 
 
+// let arr = [-2,1,-3,4,-1,2,1,-5,4]
+// let curSum = arr[0]
+// let maxSum = arr[0]
+// let start = 0
+// let end = 0
+// let temp = 0
+
+// for(let i=1; i<arr.length; i++){
+//   if(arr[i]>curSum+arr[i]){
+//     curSum = arr[i]
+//     temp = i
+//   }
+//   else{
+//     curSum += arr[i]
+//   }
+//   if(curSum>maxSum){
+//     maxSum = curSum
+//     start = temp
+//     end = i
+//   }
+//   // curSum = Math.max(curSum+arr[i],arr[i])
+//   // maxSum = Math.max(curSum,maxSum)
+// }
+// console.log(maxSum);
+// console.log(arr.slice(start,end+1));

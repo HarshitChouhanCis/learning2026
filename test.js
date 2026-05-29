@@ -52,9 +52,12 @@
 // console.log(a.reverse());
 // console.log('b: ', b);
 
-// let a = "abcdefg"
 
+
+// let a = "abcdefg"
 // console.log([...a].reverse().join(''));
+
+
 
 // let a = "Aaabbccd".toLowerCase();
 // count = 1;
@@ -83,11 +86,8 @@
 
 
 // let a = "test"
-
 // console.log([...a].reverse().join(""));
-
 // let a = "hello"
-
 // console.log([...a].reverse().join(''));
 
 
@@ -122,6 +122,7 @@
 
 
 
+
 // let str = [12,43,45,21,36,76,73,23] 
 // for(let i=0; i<str.length;){
 //   if(str[i]>str[i+1]){
@@ -134,6 +135,7 @@
 //   }
 // }
 // console.log(str[1]);
+
 
 
 // let str = [12,43,45,21,36,76,73,23,76] 
@@ -162,6 +164,7 @@
 // console.log('third: ', third);
 
 
+
 // let str = [12,43,45,21,36,76,73,23,76] 
 // let first = -Infinity
 // let second = -Infinity
@@ -178,10 +181,10 @@
 // console.log(first,second,third);
 
 
+
+
 // let arr = [1,4,2,0,8,0,0,1];
-
 // let index = 0
-
 // for(let i = 0; i<arr.length; i++){
 //   if(arr[i] !== 0){
 //     [arr[index], arr[i]] = [arr[i], arr[index]]
@@ -189,6 +192,8 @@
 //   }
 // }
 // console.log('arr: ', arr);
+
+
 
 //continous sub string that have sum 14
 // let input = [1,1,2,2,3]
@@ -201,6 +206,9 @@
 //   }
 // }
 // console.log('output: ', output);
+
+
+
 
 
 // let arr = [1, 1, 2, 2, 3];
@@ -216,6 +224,8 @@
 // console.log('arr: ', j);
 
 // console.log(arr.slice(0, j + 1));
+
+
 
 // let arr = [1, 1, 2, 2, 3];
 // let set = new Set(arr)
@@ -242,6 +252,8 @@
 // }
 
 
+
+
 // element and its count
 // let arr = [2,5,8,9,5,7,1,4,3,7,9,5,3,5,8,9,5,7,1,4,3,7,9,5,3]; 
 // let obj = {}
@@ -254,16 +266,22 @@
 // }
 // console.log('obj: ', obj);
 
+
+
+
 // let nums = [2,5,8,9,5,7,1,4,3,7,9,5,3]; 
 // let target = 13;
 // let o = nums.sort((a, b) => a - b); 
 // console.log('o: ', o);
 
+
+
+
+
 //max sum of array
 // let arr = [-2,1,-3,4,-1,2,1,-5,4];
 // let maxSum = arr[0];
 // let currentSum = arr[0];
-
 // for(let i=1;i<arr.length;i++){
 //   currentSum = Math.max(arr[i],currentSum + arr[i])
 //   maxSum = Math.max(maxSum,currentSum) 
@@ -271,11 +289,15 @@
 // console.log('maxSum: ', maxSum);
 
 
+
+
+
 // let arr = [1,2,3,-2,5];
 // let k = 5;
 // let map = { 0: 1 }; 
 // let sum = 0;
 // let count = 0;
+
 
 // for (let i = 0; i < arr.length; i++) {
 //   sum += arr[i];
@@ -286,6 +308,8 @@
 // }
 
 // console.log("count:", count);
+
+
 
 
 // // let arr = [2,5,8,9,5,7,1,4,3,7,9,5,3];
@@ -305,6 +329,9 @@
 //     obj[arr[j]] =true; 
 //   }  
 // }
+
+
+
 
 //clousr
 // function Test() {
@@ -425,6 +452,7 @@
 // console.log('output: ', output + count + temp);
 
 
+
 // let arr = [12,2,0,4,0,3,44,0,23];
 // let temp = 0;
 
@@ -435,6 +463,8 @@
 //   }
 // }
 // console.log('arr: ', arr);
+
+
 
 
 //  let arr = [12,43,45,21,36,76,73,23] 
@@ -450,6 +480,8 @@
 //     }
 //   }
 //   console.log('arr: ', arr);
+
+
 
 // let arr = [12,43,45,21,36,76,73,23,76] 
 
@@ -793,7 +825,7 @@
 
 
 // let arr = [1,2,3,4]
-// // op [24,12,8,6]
+// // // op [24,12,8,6]
 // let op = []
 // for(let i=0; i<arr.length; i++){
 //   let temp = 1
@@ -823,18 +855,18 @@
 
 
 // // op:  [ 24, 12, 8, 6 ]
-// let arr = [1,2,3,4]
-// let n = arr.length;
-// let op = new Array(n).fill(1)
-// let l = 1;
-// let r = 1;
-// for(let i=0; i<arr.length; i++){
-//   op[i] *= l;
-//   l *= arr[i];
-//   op[n-i-1] *= r;
-//   r *= arr[n-1-i]
-// }
-// console.log('op: ', op);
+let arr = [1,2,3,4]
+let n = arr.length;
+let op = new Array(n).fill(1)
+let l = 1;
+let r = 1;
+for(let i=0; i<arr.length; i++){
+  op[i] *= l;
+  l *= arr[i];
+  op[n-i-1] *= r;
+  r *= arr[n-1-i]
+}
+console.log('op: ', op);
 
 
 
@@ -941,7 +973,313 @@
 // console.log('longestUnique: ', longestUnique(str));
 
 
-let obj = {"o":12,"k":23,"j":34,"l":45,"p":56}
-let o = JSON.stringify(obj)
-console.log(JSON.stringify(obj));
-console.log(JSON.parse(o));
+// let obj = {"o":12,"k":23,"j":34,"l":45,"p":56}
+// let o = JSON.stringify(obj)
+// console.log(JSON.stringify(obj));
+// console.log(JSON.parse(o));
+// console.log();
+
+
+// const str = "harshit let str = "hello world"";
+// console.log(str.split(''));
+// console.log(new Set(str));
+// console.log([...new Set(str.split(''))].join(''));
+
+
+
+// console.log([] !== []);
+// console.log({} !== {});
+// console.log(NaN !== NaN);
+// console.log("" !== "")
+// console.log(0 !== 0);
+// console.log(null !== null);
+// console.log(undefined !== undefined);
+
+
+
+// true
+// true
+// true
+// false
+// false
+// false
+// false
+
+
+
+
+// console.log("Start");
+// setTimeout(() => {
+//   console.log("setTimeout");
+// }, 0);
+// Promise.resolve().then(() => {
+//   console.log("Promise");
+// });
+// console.log("End");
+// (()=>{console.log("hsdhihfidfidifid")})()
+
+
+
+
+// console.log([] !== []);
+// console.log({} !== {});
+// console.log(NaN !== NaN);
+// console.log("" !== "")
+// console.log(0 !== 0);
+// console.log(null !== null);
+// console.log(undefined !== undefined);
+// //true
+// //true
+// //true
+// //false
+// //false
+// //false
+// //false
+// console.log(Array.isArray([]));
+
+
+
+// function firstUnique(str){
+//  let obj ={}
+//  for(let i=0; i<str.length; i++){
+//   obj[str[i]] = (obj[str[i]] || 0) + 1;
+//  }
+//  console.log(obj);
+//  for(let i of str){
+//   if(obj[i] == 1){
+//     return i
+//   }
+//  }
+//  for(let i=0; i<str.length; i++){
+//   if(obj[str[i]] == 1) return str[i];
+//  }
+// }
+// console.log(firstUnique("aabbcde"))
+
+
+// function test(str){
+// let set = new Set(); 
+// let l = 0;
+// let count = 0;
+// let end = 0
+// for(let i=0; i<str.length; i++){
+//   while(set.has(str[i])){
+//     set.delete(str[l])
+//     l++
+//   }
+//   set.add(str[i])
+//   if(i-l+1> count){
+//    count = i-l+1;
+//    end = i;
+//   }
+// }
+// console.log(end,l);
+// return str.slice(end-count+1,end+1)
+// }
+
+
+// console.log('longestUnique: ', test("abcabcxbb"));
+
+
+// let obj ={ a:0}
+// if(obj.a){
+//   console.log("hello");
+// }else{
+//   console.log("no hello");
+// }
+
+// function countVC(str){
+//   let vowels = "aeiou"
+//   let v = 0,c = 0;
+//   for(let i of str){
+//     (vowels.includes(i))?v++ : c++;  
+//   }
+//   console.log('v,c: ', v,c); 
+// }
+
+// console.log(countVC("hello"))
+
+
+// let a = "h e l l o"
+// // let a1 = "hello"
+
+// console.log(a.split(" ").reverse().join(""));
+
+
+// let a = "hello"
+// console.log([...a].reverse().join(""));
+
+
+// let str = "hello world"
+// console.log(str.split(" ").map((t)=> t[0].toUpperCase() + t.slice(1)));
+
+
+// --------------------------------------------------------------------------------- monday
+
+// Maximum subarray sum + print subarray
+// let arr = [-2,1,-3,4,-1,2,1,-5,4]
+
+
+//op slidingwindow (13) with subArray
+// let arr = [2,3,4,2,1,4,0,6,0,3,4,0,2,5];
+// let limit = 4;
+ 
+
+//prototype
+
+// let arr = [2,3,4,2,1,4,0,6,0,3,4,0,2,5];
+// let limit = 4;
+
+// function test(){
+//  let slidingSum = 0;
+//  let maxSum = 0;
+//  let l=0;
+//  let start = 0
+//  for(let i=0; i<limit; i++){
+//    slidingSum += arr[i]
+//    console.log('slidingSum: ', slidingSum); 
+//  }
+//   maxSum = slidingSum;
+//   for(let i=limit; i<arr.length; i++){
+//     slidingSum = slidingSum + arr[i] - arr[i-limit]
+//     l++
+//     console.log('slidingSum: ', slidingSum);
+//     if(maxSum<slidingSum){
+//       maxSum = slidingSum
+//       start = l
+//     }
+//   }
+//   console.log("sss",start);
+//   let subArray = arr.slice(start,start+limit)
+//   console.log('subArray: ', subArray);
+//   return maxSum;
+// }
+
+// console.log(test());
+
+
+
+
+// let arr = [2,3,4,2,1,4,0,6,0,3,4,0,2,5];
+// let limit = 4;
+// let start = 0;
+// function test(){
+//  let slidingSum = 0;
+//  let maxSum = 0;
+//   for(let i=0; i<limit; i++){
+//   slidingSum += arr[i]
+//   }
+//   maxSum = slidingSum;
+//   for(let i=limit; i<arr.length; i++){
+//   slidingSum += arr[i] - arr[i-limit]
+//    if(maxSum<slidingSum){
+//     maxSum = slidingSum;
+//     start = i - limit + 1;
+//    }
+//   }
+//   let subArr = arr.slice(start,start+limit)
+//   return {subArr,maxSum}
+// }
+
+// console.log('test(): ', test());
+
+
+
+//longest subarray sum is 14 as will as its subarray
+//two pointer TC=o(n+n)  SC=o(1)
+// let arr =[2,5,1,7,1,0,1,0,2,1]
+// let k =14;
+// let l =0;
+// let r =0;
+// let sum =0;
+// let maxSum = 0
+// let start = 0
+// let end = 0
+
+// while(r<arr.length){
+//  sum += arr[r]
+//  while(sum>k){
+//    sum = sum - arr[l];
+//    l++ 
+//   }
+//   if(sum==k){
+//     maxSum = Math.max(maxSum,sum)
+//     console.log(r,l);
+//     start = l;
+//     end = r;
+//   }
+//   r++
+// }
+
+// console.log(arr.slice(start,end+1));
+
+
+
+// let arr = [1,2,3,4]
+// let op = []
+// let a = arr.reduce((acc,cur)=>acc* cur,1)
+// for(let i=0; i<arr.length; i++){
+//   op.push(a/arr[i])
+// }
+// console.log(op);
+
+
+// prime
+// let a = 7;
+
+// function test(){
+//   for(let i=2; i<a; i++){
+//     if(a%i == 0){
+//       console.log("it is not prime");
+//       return 
+//     }else{
+//       console.log("it is prime");
+//     }
+//   }
+// }
+
+// test()
+
+
+
+
+
+
+//------------------------------------------------------------------------------__
+// Example 1:
+
+// Input: s = "babad"
+// Output: "bab"
+// Explanation: "aba" is also a valid answer.
+// Example 2:
+
+// // Input: s = "cbbd"
+// // Output: "bb"
+
+// var longestPalindrome = function(s) {
+
+//     let longest = "";
+
+//     for (let i = 0; i < s.length; i++) {
+
+//         for (let j = i + 1; j <= s.length; j++) {
+
+//             let sub = s.slice(i, j);
+
+//             let reverse = sub
+//                 .split("")
+//                 .reverse()
+//                 .join("");
+
+//             if (sub === reverse && sub.length > longest.length) {
+//                 longest = sub;
+//             }
+//         }
+//     }
+
+//     return longest;
+// };
+
+// console.log(longestPalindrome("babad"));
+// //but not good approch
+//------------------------------------------------------------------------------_

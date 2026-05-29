@@ -1,62 +1,75 @@
-import { useContext, createContext, useState } from "react";
+// import { useContext, createContext, useState } from "react";
 
-const abc = createContext()
-export default function Component1() {
-  const [data, setData] = useState("hello11111111111111")
+// const abc = createContext()
+// export default function Component1() {
+//   const [data, setData] = useState("hello11111111111111")
 
-  return (<>
-  <abc.Provider value={data}>
-    <Component2></Component2>
-  </abc.Provider>
-  </>)
-}
+//   return (<>
+//   <abc.Provider value={data}>
+//     <Component2></Component2>
+//   </abc.Provider>
+//   </>)
+// }
 
 
-function Component2(){
+// function Component2(){
  
-const abc = createContext()
-export default function Component1() {
-  const [data, setData] = useState("hello11111111111111")
+//   return(import { useContext, createContext, useState } from "react";
 
-  return (<>
-  <abc.Provider value={data}>
-    <Component2></Component2>
-  </abc.Provider>
-  </>)
-}
+// const abc = createContext()
+// export default function Component1() {
+//   const [data, setData] = useState("hello11111111111111")
+
+//   return (<>
+//   <abc.Provider value={data}>
+//     <Component2></Component2>
+//   </abc.Provider>
+//   </>)
+// }
 
 
-function Component2(){
+// function Component2(){
  
-  return(
-    <>
-   <Component3/>
-    </>
+//   return(
+//     <>
+//    <Component3/>
+//     </>
+//   )
+// }
+
+// function Component3(){
+//   const myData = useContext(abc)
+//   return(
+//     <>
+//     <p>{myData}</p>
+//     </>
+//   )
+// }
+
+//     <>
+//    <Component3/>
+//     </>
+//   )
+// }
+
+// function Component3(){
+//   const myData = useContext(abc)
+//   return(
+//     <>
+//     <p>{myData}</p>
+//     </>
+//   )
+// }
+
+
+import React from 'react'
+
+function Context() {
+  return (
+    <div>
+      
+    </div>
   )
 }
 
-function Component3(){
-  const myData = useContext(abc)
-  return(
-    <>
-    <p>{myData}</p>
-    </>
-  )
-}
-
-    <>
-   <Component3/>
-    </>
-  )
-}
-
-function Component3(){
-  const myData = useContext(abc)
-  return(
-    <>
-    <p>{myData}</p>
-    </>
-  )
-}
-
-
+export default Context
